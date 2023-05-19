@@ -1,14 +1,14 @@
 <script>
-	// import Header from '../lib/Header.svelte';
+	import SiteHeader from '$lib/components/SiteHeader.svelte';
 	import './styles.css';
 </script>
 
 <div class="page-root app">
-	<!-- <Header /> -->
+	<SiteHeader />
 	<main>
 		<slot />
 	</main>
-	<footer><!-- footer --></footer>
+	<footer> @footer</footer>
 </div>
 
 <style>
