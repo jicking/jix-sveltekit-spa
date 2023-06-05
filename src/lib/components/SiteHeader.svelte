@@ -1,5 +1,5 @@
 <script>
-	import { userAuth } from "../store/store";
+	import { userAuth } from '../store/store';
 </script>
 
 <header>
@@ -11,7 +11,7 @@
 			</li>
 			<li>
 				<a href="/about">About</a>
-			</li>            
+			</li>
 
 			{#if $userAuth}
 				<li>

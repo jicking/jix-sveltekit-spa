@@ -8,9 +8,9 @@
 	<main>
 		<slot />
 	</main>
-	<footer> @footer</footer>
+	<footer>@footer</footer>
 </div>
 
 <style>
-    /*  */
+	/*  */
 </style>

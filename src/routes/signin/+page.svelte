@@ -1,10 +1,10 @@
 <script>
-	import { userAuth } from "$lib/store/store";
+	import { userAuth } from '$lib/store/store';
 	import { goto } from '$app/navigation';
 
 	const handleSigninClick = () => {
-		userAuth.setUserAuth("TestUser","xYt5sKM","xoPl1");
-		goto("/account")
+		userAuth.setUserAuth('TestUser', 'xYt5sKM', 'xoPl1');
+		goto('/account');
 	};
 </script>
 

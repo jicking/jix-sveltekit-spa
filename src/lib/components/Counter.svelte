@@ -1,21 +1,13 @@
 <script lang="ts">
-	import { count } from "../store/store";
+	import { count } from '../store/store';
 </script>
 
 <div class="counter">
-    <h1>Counter : {$count}</h1>
-	<button on:click={count.increment} class="counter-btn">
-		+
-	</button>
-    <button on:click={count.decrement} class="counter-btn">
-		-
-	</button>
-    <button on:click={() => $count *= $count} class="counter-btn">
-		power
-	</button>
-    <button on:click={count.reset} class="counter-btn">
-		reset
-	</button>
+	<h1>Counter : {$count}</h1>
+	<button on:click={count.increment} class="counter-btn"> + </button>
+	<button on:click={count.decrement} class="counter-btn"> - </button>
+	<button on:click={() => ($count *= $count)} class="counter-btn"> power </button>
+	<button on:click={count.reset} class="counter-btn"> reset </button>
 </div>
 
 <style>
