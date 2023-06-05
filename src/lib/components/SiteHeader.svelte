@@ -1,5 +1,5 @@
 <script>
-    //
+	import { userAuth } from "../store/store";
 </script>
 
 <header>
@@ -11,13 +11,17 @@
 			</li>
 			<li>
 				<a href="/about">About</a>
-			</li>
-			<li>
-				<a href="/account">Account</a>
-			</li>
-            <li>
-				<a href="/signin">Signin</a>
-			</li>
+			</li>            
+
+			{#if $userAuth}
+				<li>
+					<a href="/account">Account</a>
+				</li>
+			{:else}
+				<li>
+					<a href="/signin">Signin</a>
+				</li>
+			{/if}
 		</ul>
 	</nav>
 </header>

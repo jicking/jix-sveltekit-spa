@@ -1,6 +1,5 @@
 <script lang="ts">
-	// @todo use $lib module - https://kit.svelte.dev/docs/modules
-	import { count } from "../shared/store";
+	import { count } from "../store/store";
 </script>
 
 <div class="counter">

@@ -1,5 +1,8 @@
-import { redirect } from "@sveltejs/kit";
+import { redirect } from '@sveltejs/kit';
+import { userAuth } from '$lib/store/store';
 
 export function load() {
-    throw redirect(307, '/signin');
+	const isUserAuthSet = userAuth.hasValue();
+
+	if (!isUserAuthSet) throw redirect(307, '/signin');
 }
